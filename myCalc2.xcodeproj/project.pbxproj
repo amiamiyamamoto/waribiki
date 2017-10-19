@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E77440E91F98584400DE7FBC /* PercentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77440E81F98584400DE7FBC /* PercentViewController.swift */; };
 		E78975F41F90C31700BFDA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78975F31F90C31700BFDA10 /* AppDelegate.swift */; };
 		E78975F61F90C31700BFDA10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78975F51F90C31700BFDA10 /* ViewController.swift */; };
 		E78975F91F90C31700BFDA10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78975F71F90C31700BFDA10 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E77440E81F98584400DE7FBC /* PercentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentViewController.swift; sourceTree = "<group>"; };
 		E78975F01F90C31700BFDA10 /* myCalc2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myCalc2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78975F31F90C31700BFDA10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E78975F51F90C31700BFDA10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				E78975F31F90C31700BFDA10 /* AppDelegate.swift */,
+				E77440E81F98584400DE7FBC /* PercentViewController.swift */,
 				E78975F51F90C31700BFDA10 /* ViewController.swift */,
 				E78975F71F90C31700BFDA10 /* Main.storyboard */,
 				E78975FA1F90C31700BFDA10 /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			files = (
 				E78975F61F90C31700BFDA10 /* ViewController.swift in Sources */,
 				E78975F41F90C31700BFDA10 /* AppDelegate.swift in Sources */,
+				E77440E91F98584400DE7FBC /* PercentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +305,7 @@
 				E78976041F90C31700BFDA10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

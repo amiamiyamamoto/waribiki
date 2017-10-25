@@ -15,73 +15,45 @@ class PercentViewController: UIViewController {
     //割引パーセンテージ入力フィールド
     @IBOutlet weak var percentFeald: UITextField!
     @IBAction func tap1Button(_ sender: Any) {
-        let value:String = percentFeald.text! + "1"
-        if let percent = Int(value){
-            percentFeald.text = "\(percent)"
-        }
+        addNumber(num: "1")
     }
     //宿題：0~9と、Cの動作を記入する
     
     @IBAction func tap2Button(_ sender: Any) {
-        let value:String = percentFeald.text! + "2"
-        if let percent = Int(value){
-            percentFeald.text = "\(percent)"
-        }
+        addNumber(num: "2")
     }
     
     @IBAction func tap3Button(_ sender: Any) {
-        let value:String = percentFeald.text! + "3"
-        if let percent = Int(value){
-            percentFeald.text = "\(percent)"
-        }
+        addNumber(num: "3")
     }
+
     @IBAction func tap4Button(_ sender: Any) {
-        let value:String = percentFeald.text! + "4"
-        if let percent = Int(value){
-            percentFeald.text = "\(percent)"
-        }
+        addNumber(num: "4")
     }
     
     @IBAction func tap5Button(_ sender: Any) {
-        let value:String = percentFeald.text! + "5"
-        if let percent = Int(value){
-            percentFeald.text = "\(percent)"
-        }
+        addNumber(num: "5")
     }
     
     @IBAction func tap6Button(_ sender: Any) {
-        let value:String = percentFeald.text! + "6"
-        if let percent = Int(value){
-            percentFeald.text = "\(percent)"
-        }
+        addNumber(num: "6")
     }
     
     @IBAction func tap7Button(_ sender: Any) {
-        let value:String = percentFeald.text! + "7"
-        if let percent = Int(value){
-            percentFeald.text = "\(percent)"
-        }
+        addNumber(num: "7")
     }
     
     @IBAction func tap8Button(_ sender: Any) {
-        let value:String = percentFeald.text! + "8"
-        if let percent = Int(value){
-            percentFeald.text = "\(percent)"
-        }
+        addNumber(num: "8")
     }
     
     @IBAction func tap9Button(_ sender: Any) {
-        let value:String = percentFeald.text! + "9"
-        if let percent = Int(value){
-            percentFeald.text = "\(percent)"
-        }
+        addNumber(num: "9")
     }
     
     @IBAction func tap0Button(_ sender: Any) {
-        let value:String = percentFeald.text! + "0"
-        if let percent = Int(value){
-            percentFeald.text = "\(percent)"
-        }
+        //var buttonNum:String? = self.title
+        addNumber(num: "0")
     }
     
     @IBAction func tapCButton(_ sender: Any) {
@@ -89,6 +61,12 @@ class PercentViewController: UIViewController {
         
     }
     
+    func addNumber(num:String){
+        let value:String = percentFeald.text! + num
+        if let percent = Int(value){
+            percentFeald.text = "\(percent)"
+        }
+    }
     
     
     

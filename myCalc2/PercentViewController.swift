@@ -52,7 +52,6 @@ class PercentViewController: UIViewController {
     }
     
     @IBAction func tap0Button(_ sender: Any) {
-        //var buttonNum:String? = self.title
         addNumber(num: "0")
     }
     

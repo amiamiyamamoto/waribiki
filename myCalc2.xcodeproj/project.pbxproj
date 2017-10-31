@@ -13,6 +13,7 @@
 		E78975F91F90C31700BFDA10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78975F71F90C31700BFDA10 /* Main.storyboard */; };
 		E78975FB1F90C31700BFDA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78975FA1F90C31700BFDA10 /* Assets.xcassets */; };
 		E78975FE1F90C31700BFDA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78975FC1F90C31700BFDA10 /* LaunchScreen.storyboard */; };
+		E78F466C1FA8234B005AC078 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F466B1FA8234B005AC078 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E78975FA1F90C31700BFDA10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E78975FD1F90C31700BFDA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E78975FF1F90C31700BFDA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E78F466B1FA8234B005AC078 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				E78975F31F90C31700BFDA10 /* AppDelegate.swift */,
 				E77440E81F98584400DE7FBC /* PercentViewController.swift */,
+				E78F466B1FA8234B005AC078 /* ResultViewController.swift */,
 				E78975F51F90C31700BFDA10 /* ViewController.swift */,
 				E78975F71F90C31700BFDA10 /* Main.storyboard */,
 				E78975FA1F90C31700BFDA10 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 				E78975F61F90C31700BFDA10 /* ViewController.swift in Sources */,
 				E78975F41F90C31700BFDA10 /* AppDelegate.swift in Sources */,
 				E77440E91F98584400DE7FBC /* PercentViewController.swift in Sources */,
+				E78F466C1FA8234B005AC078 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

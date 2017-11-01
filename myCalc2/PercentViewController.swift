@@ -12,10 +12,25 @@ class PercentViewController: UIViewController {
     
     //金額を受け取るプロパティ
     var price:Int = 0
+    
+    
     //割引パーセンテージ入力フィールド
     @IBOutlet weak var percentFeald: UITextField!
     @IBAction func tap1Button(_ sender: Any) {
         addNumber(num: "1")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //次の画面情報を取りだす
+        let viewController = segue.destination as! ResultViewController
+        
+        //金額を次の画面に渡す
+        viewController.price = price
+        
+        //割引率を次の画面に渡す
+        if let percent = Int(percentFeald.text!) {
+            viewController.percent = percent
+        }
     }
     //宿題：0~9と、Cの動作を記入する
     
@@ -66,9 +81,6 @@ class PercentViewController: UIViewController {
             percentFeald.text = "\(percent)"
         }
     }
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

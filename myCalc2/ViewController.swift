@@ -11,6 +11,22 @@ import UIKit
 class ViewController: UIViewController {
     //@は、予約語（これはインターフェービルダー）ここでパーツを宣言してる
     @IBOutlet weak var priceField: UITextField!
+    
+    @IBAction func restart(_ segue:UIStoryboardSegue) {
+        //金額フィールドの値を0に戻す
+        priceField.text = "0"
+    }
+    
+    //次の画面に値を渡す処理
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //次の画面を取りだす
+        let viewController = segue.destination as! PercentViewController
+        
+        //金額フィールドの文字列を数値に変換する
+        if let price = Int(priceField.text!) {
+            viewController.price = price
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

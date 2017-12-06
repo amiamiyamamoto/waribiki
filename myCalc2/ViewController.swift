@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     @IBAction func restart(_ segue:UIStoryboardSegue) {
         //金額フィールドの値を0に戻す
         priceField.text = "0"
+        let ud = UserDefaults.standard
+        ud.set("0", forKey: "num")
+        ud.synchronize()
     }
     
     //次の画面に値を渡す処理
@@ -30,6 +33,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let ud = UserDefaults.standard
+        let num:String? = ud.string(forKey: "num")
+        if let num = num {
+            priceField.text = num
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,6 +52,8 @@ class ViewController: UIViewController {
         if let price = Int(value){
             priceField.text = "\(price)"
         }
+        
+        saveNumber(num: priceField.text)
     }
     
     //2のボタン
@@ -52,6 +62,7 @@ class ViewController: UIViewController {
         if let price = Int(value){
             priceField.text = "\(price)"
         }
+        saveNumber(num: priceField.text)
     }
     
     @IBAction func tap3Button(_ sender: Any) {
@@ -59,6 +70,7 @@ class ViewController: UIViewController {
         if let price = Int(value){
             priceField.text = "\(price)"
         }
+        saveNumber(num: priceField.text)
     }
     
     @IBAction func tap4Button(_ sender: Any) {
@@ -66,6 +78,7 @@ class ViewController: UIViewController {
         if let price = Int(value){
             priceField.text = "\(price)"
         }
+        saveNumber(num: priceField.text)
     }
     
     @IBAction func tap5Button(_ sender: Any) {
@@ -73,6 +86,7 @@ class ViewController: UIViewController {
         if let price = Int(value){
             priceField.text = "\(price)"
         }
+        saveNumber(num: priceField.text)
     }
     
     @IBAction func tap6Buttoon(_ sender: Any) {
@@ -80,6 +94,7 @@ class ViewController: UIViewController {
         if let price = Int(value){
             priceField.text = "\(price)"
         }
+        saveNumber(num: priceField.text)
     }
     
     @IBAction func tap7Button(_ sender: Any) {
@@ -87,6 +102,7 @@ class ViewController: UIViewController {
         if let price = Int(value){
             priceField.text = "\(price)"
         }
+        saveNumber(num: priceField.text)
     }
     
     @IBAction func tap8Button(_ sender: Any) {
@@ -94,6 +110,7 @@ class ViewController: UIViewController {
         if let price = Int(value){
             priceField.text = "\(price)"
         }
+        saveNumber(num: priceField.text)
     }
     
     @IBAction func tap9Button(_ sender: Any) {
@@ -101,6 +118,7 @@ class ViewController: UIViewController {
         if let price = Int(value){
             priceField.text = "\(price)"
         }
+        saveNumber(num: priceField.text)
     }
     
     @IBAction func tap00Button(_ sender: Any) {
@@ -108,6 +126,7 @@ class ViewController: UIViewController {
         if let price = Int(value){
             priceField.text = "\(price)"
         }
+        saveNumber(num: priceField.text)
     }
     
     //0のボタン
@@ -116,14 +135,21 @@ class ViewController: UIViewController {
         if let price = Int(value){
             priceField.text = "\(price)"
         }
+        saveNumber(num: priceField.text)
     }
     
     //Cをおした時
     @IBAction func tupClearButton(_ sender: Any) {
         priceField.text = "0"
+        saveNumber(num: priceField.text)
     }
     
-    //宿題　全ての数字のボタンをFunction化してくる
+    //宿題　userdefaultにテキストフィールドの値を保存する
+    func saveNumber(num:String?) {
+        let ud = UserDefaults.standard
+        ud.set(num, forKey: "num")
+        ud.synchronize()
+    }
     
 }
 
